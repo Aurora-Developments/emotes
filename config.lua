@@ -1,6 +1,4 @@
---- Maintained by TayMcKenzieNZ for the community ---
---- Leakers and resellers are the absolute scum of the earth ---
---- RPEMOTES IS AND ALWAYS WILL BE FREE. STOP PAYING FOR LEAKS!!! ---
+--- Maintained by Aurora Developments for the community ---
 
 Config = {
     -- Change the language of the menu here!.

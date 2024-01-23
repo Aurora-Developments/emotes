@@ -1,4 +1,4 @@
-print("RpEmotes by TayMcKenzieNZ, Mathu_lmn & MadsL loaded sucessfully.")
+print(GetResourceState()"Has Started")
 
 SetTimeout( 1000, function ()
     if GetResourceState('dpemotes') == 'started' then

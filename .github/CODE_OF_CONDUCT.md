@@ -40,10 +40,6 @@ Unacceptable behavior from any community member, including contributors and main
 - Temporary or permanent exclusion from the project or community.
 - Reporting to platform administrators or relevant authorities, if necessary.
 
-## Reporting Guidelines
-
-If you witness or experience any behavior that violates this Code of Conduct, please promptly report it to the project maintainers at report@rpemotes.com. All complaints will be reviewed and investigated promptly and fairly.
-
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/), version 2.0, available at [https://www.contributor-covenant.org/version/2/0/code_of_conduct/](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).

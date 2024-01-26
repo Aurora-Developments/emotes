@@ -1,4 +1,4 @@
-# RPEmotes - Contributing Guidelines
+# Emotes - Contributing Guidelines
 
 Thank you for considering contributing to our project! We value the involvement of every community member and appreciate your help in making this project better. To ensure a positive and inclusive experience for everyone, we have established these guidelines, which we expect all contributors to follow.
 

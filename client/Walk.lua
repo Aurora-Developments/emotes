@@ -1,9 +1,3 @@
---- RPEmotes by TayMcKenzieNZ, Mathu_lmn and MadsL, maintained by TayMcKenzieNZ ---
---- Download OFFICIAL version and updates ONLY at https://github.com/TayMcKenzieNZ/rpemotes ---
---- RPEmotes is FREE and ALWAYS will be. STOP PAYING SCAMMY FUCKERS FOR SOMEONE ELSE'S WORK!!! ---
-
-
-
 local canChange = true
 local unable_message = "You are unable to change your walking style right now."
 
@@ -28,7 +22,7 @@ end
 
 function WalksOnCommand()
     local WalksCommand = ""
-    for a in pairsByKeys(RP.Walks) do
+    for a in pairsByKeys(emote.Walks) do
         WalksCommand = WalksCommand .. "" .. string.lower(a) .. ", "
     end
     EmoteChatMessage(WalksCommand)
@@ -48,8 +42,8 @@ function WalkCommandStart(name)
         return
     end
 
-    if tableHasKey(RP.Walks, name) then
-        local name2 = table.unpack(RP.Walks[name])
+    if tableHasKey(emote.Walks, name) then
+        local name2 = table.unpack(emote.Walks[name])
         WalkMenuStart(name2)
     elseif name == "Injured" then
         WalkMenuStart("move_m@injured")

@@ -1,9 +1,3 @@
---- RPEmotes by TayMcKenzieNZ, Mathu_lmn and MadsL, maintained by TayMcKenzieNZ ---
---- Download OFFICIAL version and updates ONLY at https://github.com/TayMcKenzieNZ/rpemotes ---
---- RPEmotes is FREE and ALWAYS will be. STOP PAYING SCAMMY FUCKERS FOR SOMEONE ELSE'S WORK!!! ---
-
-
-
 function SetPlayerPedExpression(expression, saveToKvp)
     SetFacialIdleAnimOverride(PlayerPedId(), expression, 0)
     if Config.PersistentExpression and saveToKvp then SetResourceKvp("expression", expression) end
@@ -11,7 +5,7 @@ end
 
 local function DisplayExpressions()
     local moodsString = ""
-    for name, _ in pairs(RP.Expressions) do
+    for name, _ in pairs(emote.Expressions) do
         moodsString = moodsString..string.lower(name)..", "
     end
 
@@ -22,8 +16,8 @@ end
 if Config.ExpressionsEnabled then
     RegisterCommand('mood', function(_source, args, _raw)
         local expression = firstToUpper(string.lower(args[1]))
-        if RP.Expressions[expression] ~= nil then
-            SetPlayerPedExpression(RP.Expressions[expression][1], true)
+        if emote.Expressions[expression] ~= nil then
+            SetPlayerPedExpression(emote.Expressions[expression][1], true)
         elseif expression == "Reset" then
             ClearFacialIdleAnimOverride(PlayerPedId())
             DeleteResourceKvp("expression")

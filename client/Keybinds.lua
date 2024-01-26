@@ -1,9 +1,3 @@
---- RPEmotes by TayMcKenzieNZ, Mathu_lmn and MadsL, maintained by TayMcKenzieNZ ---
---- Download OFFICIAL version and updates ONLY at https://github.com/TayMcKenzieNZ/rpemotes ---
---- RPEmotes is FREE and ALWAYS will be. STOP PAYING SCAMMY FUCKERS FOR SOMEONE ELSE'S WORK!!! ---
-
-
-
 if Config.SqlKeybinding then
     local emob1 = ""
     local emob2 = ""
@@ -27,7 +21,7 @@ if Config.SqlKeybinding then
         while true do
             if NetworkIsPlayerActive(PlayerId()) and not Initialized then
                 if not Initialized then
-                    TriggerServerEvent("rp:ServerKeybindExist")
+                    TriggerServerEvent("emote:ServerKeybindExist")
                     Wait(5000)
                 end
             end
@@ -49,17 +43,17 @@ if Config.SqlKeybinding then
         end
     end)
 
-    RegisterNetEvent("rp:ClientKeybindExist")
-    AddEventHandler("rp:ClientKeybindExist", function(does)
+    RegisterNetEvent("emote:ClientKeybindExist")
+    AddEventHandler("emote:ClientKeybindExist", function(does)
         if does then
-            TriggerServerEvent("rp:ServerKeybindGrab")
+            TriggerServerEvent("emote:ServerKeybindGrab")
         else
-            TriggerServerEvent("rp:ServerKeybindCreate")
+            TriggerServerEvent("emote:ServerKeybindCreate")
         end
     end)
 
-    RegisterNetEvent("rp:ClientKeybindGet")
-    AddEventHandler("rp:ClientKeybindGet", function(k1, e1, k2, e2, k3, e3, k4, e4, k5, e5, k6, e6)
+    RegisterNetEvent("emote:ClientKeybindGet")
+    AddEventHandler("emote:ClientKeybindGet", function(k1, e1, k2, e2, k3, e3, k4, e4, k5, e5, k6, e6)
         keyb1 = k1
         emob1 = e1
         keyb2 = k2
@@ -75,8 +69,8 @@ if Config.SqlKeybinding then
         Initialized = true
     end)
 
-    RegisterNetEvent("rp:ClientKeybindGetOne")
-    AddEventHandler("rp:ClientKeybindGetOne", function(key, e)
+    RegisterNetEvent("emote:ClientKeybindGetOne")
+    AddEventHandler("emote:ClientKeybindGetOne", function(key, e)
         SimpleNotify(Config.Languages[lang]['bound'] ..
             "~y~" .. e .. "~w~ " .. Config.Languages[lang]['to'] .. " ~g~" .. firstToUpper(key) .. "~w~")
         if key == "num4" then emob1 = e
@@ -113,12 +107,12 @@ if Config.SqlKeybinding then
             local key = string.lower(args[1])
             local emote = string.lower(args[2])
             if (Config.KeybindKeys[key]) ~= nil then
-                if RP.Emotes[emote] ~= nil
-                    or RP.Dances[emote] ~= nil
-                    or RP.PropEmotes[emote] ~= nil
-                    or RP.AnimalEmotes[emote] ~= nil
+                if emote.Emotes[emote] ~= nil
+                    or emote.Dances[emote] ~= nil
+                    or emote.PropEmotes[emote] ~= nil
+                    or emote.AnimalEmotes[emote] ~= nil
                 then
-                    TriggerServerEvent("rp:ServerKeybindUpdate", key, emote)
+                    TriggerServerEvent("emote:ServerKeybindUpdate", key, emote)
                 else
                     EmoteChatMessage("'" .. emote .. "' " .. Config.Languages[lang]['notvalidemote'] .. "")
                 end

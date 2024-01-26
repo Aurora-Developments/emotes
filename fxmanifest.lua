@@ -1,11 +1,7 @@
---- RPEmotes by TayMcKenzieNZ, Mathu_lmn and MadsL, maintained by TayMcKenzieNZ ---
---- Download OFFICIAL version and updates ONLY at https://github.com/TayMcKenzieNZ/rpemotes ---
---- RPEmotes is FREE and ALWAYS will be. STOP PAYING SCAMMY FUCKERS FOR SOMEONE ELSE'S WORK!!! ---
-
 fx_version 'cerulean'
 game 'gta5'
 authors { 'Aurora Developments' }
-description 'RPEmotes V1.3.9'
+description 'Emotes V1.3.9'
 version '1.3.9'
 lua54 'yes'
 
@@ -24,28 +20,28 @@ dependencies {
 --#endregion oxmysql
 
 files {
-    'propsets.meta',
-    'conditionalanims.meta',
+    'meta/propsets.meta',
+    'meta/conditionalanims.meta',
 }
 
-data_file 'AMBIENT_PROP_MODEL_SET_FILE' 'propsets.meta'
-data_file 'CONDITIONAL_ANIMS_FILE' 'conditionalanims.meta'
+data_file 'AMBIENT_PROP_MODEL_SET_FILE' 'meta/propsets.meta'
+data_file 'CONDITIONAL_ANIMS_FILE' 'meta/conditionalanims.meta'
 
 shared_scripts {
-    'config.lua',
-    'Translations.lua',
-    'animals.lua',
+    'misc/config.lua',
+    'misc/Translations.lua',
+    'misc/animals.lua',
 }
 
 server_scripts {
-    'printer.lua',
+    'server/printer.lua',
     'server/Server.lua',
     'server/Updates.lua',
     'server/frameworks/*.lua'
 }
 
 client_scripts {
-    'NativeUI.lua',
+    'client/NativeUI.lua',
     'client/Utils.lua',
     'client/AnimationList.lua',
     'client/AnimationListCustom.lua',
@@ -68,7 +64,7 @@ client_scripts {
 ---- Loads all ytyp files for custom props to stream ---
 ---- You will need to add a data_file 'DLC_ITYP_REQUEST' for your own to work in game ---
 
-data_file 'DLC_ITYP_REQUEST' 'stream/taymckenzienz_rpemotes.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/Emotes/emotes.ytyp'
 
 data_file 'DLC_ITYP_REQUEST' 'stream/brummie_props.ytyp'
 

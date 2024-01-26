@@ -1,4 +1,4 @@
-# RPEmotes - Code of Conduct
+# Emotes - Code of Conduct
 
 As contributors and maintainers of this project, we aim to foster a welcoming and inclusive environment for everyone. We value the participation of every individual and encourage respectful and constructive interactions. This Code of Conduct outlines our expectations for all those who contribute to our project, as well as the consequences for unacceptable behavior.
 

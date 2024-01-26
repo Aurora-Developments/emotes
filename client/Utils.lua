@@ -1,7 +1,3 @@
---- RPEmotes by TayMcKenzieNZ, Mathu_lmn and MadsL, maintained by TayMcKenzieNZ ---
---- Download OFFICIAL version and updates ONLY at https://github.com/TayMcKenzieNZ/rpemotes ---
---- RPEmotes is FREE and ALWAYS will be. STOP PAYING SCAMMY FUCKERS FOR SOMEONE ELSE'S WORK!!! ---
-
 -- You can edit this function to add support for your favorite notification system
 function SimpleNotify(message)
     if Config.NotificationsAsChatMessage then
@@ -139,7 +135,7 @@ end
 
 function NearbysOnCommand(source, args, raw)
     local NearbysCommand = ""
-    for a in pairsByKeys(RP.Shared) do
+    for a in pairsByKeys(emote.Shared) do
         NearbysCommand = NearbysCommand .. "" .. a .. ", "
     end
     EmoteChatMessage(NearbysCommand)

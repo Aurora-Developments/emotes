@@ -1,9 +1,3 @@
---- RPEmotes by TayMcKenzieNZ, Mathu_lmn and MadsL, maintained by TayMcKenzieNZ ---
---- Download OFFICIAL version and updates ONLY at https://github.com/TayMcKenzieNZ/rpemotes ---
---- RPEmotes is FREE and ALWAYS will be. STOP PAYING SCAMMY FUCKERS FOR SOMEONE ELSE'S WORK!!! ---
-
-
-
 Pointing = false
 
 local function IsPlayerAiming(player)
@@ -30,9 +24,9 @@ local function PointingStopped()
     end
     RemoveAnimDict("anim@mp_point")
     if Config.PersistentEmoteAfterPointing and IsInAnimation then
-        local emote = RP.Emotes[CurrentAnimationName]
+        local emote = emote.Emotes[CurrentAnimationName]
         if not emote then
-            emote = RP.PropEmotes[CurrentAnimationName]
+            emote = emote.PropEmotes[CurrentAnimationName]
         end
 
         if not emote then

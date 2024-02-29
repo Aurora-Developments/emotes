@@ -302,7 +302,7 @@ No Idle Cam allows players to disable the idle camera animation on foot and in v
 
 
 
-<img src="https://forum.cfx.re/uploads/default/original/4X/2/6/3/263b6f2afe148191193fca8c8cc0b9bc666da9e8.jpeg" width="600" height="auto"> 
+<img src="Binoculars here" width="600" height="auto"> 
 
 
 

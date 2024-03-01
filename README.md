@@ -158,17 +158,17 @@ Languages can be selected and / or added in the config.lua.
 When using our emote menu with other scripts, using the `TriggerEvent('animations:client:EmoteCommandStart` won't do anything because the events do not exist. These have simply been replaced with the following exports:
 
 ```lua
-exports["Emotes"]:EmoteCommandStart(emoteName, textureVariation)
-exports["Emotes"]:EmoteCancel(forceCancel) – forceCancel is optional
-exports["Emotes"]:CanCancelEmote(state)
-exports["Emotes"]:IsPlayerCrouched()
-exports["Emotes"]:IsPlayerProne()
-exports["Emotes"]:IsPlayerCrawling()
-exports["Emotes"]:IsPlayerPointing()
-exports["Emotes"]:IsPlayerInAnim()
-exports["Emotes"]:toggleWalkstyle(bool, message)
-exports["Emotes"]:toggleBinoculars()
-exports["Emotes"]:toggleNewscam()
+exports["emotes"]:EmoteCommandStart(emoteName, textureVariation)
+exports["emotes"]:EmoteCancel(forceCancel) – forceCancel is optional
+exports["emotes"]:CanCancelEmote(state)
+exports["emotes"]:IsPlayerCrouched()
+exports["emotes"]:IsPlayerProne()
+exports["emotes"]:IsPlayerCrawling()
+exports["emotes"]:IsPlayerPointing()
+exports["emotes"]:IsPlayerInAnim()
+exports["emotes"]:toggleWalkstyle(bool, message)
+exports["emotes"]:toggleBinoculars()
+exports["emotes"]:toggleNewscam()
 -- bool to allow the user to change their walkstyle in the menu or not / message to show the user (optional, default is :"You are unable to change your walking style right now.")"
 ```
 
